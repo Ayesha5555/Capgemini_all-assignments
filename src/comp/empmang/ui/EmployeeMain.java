@@ -42,10 +42,14 @@ public class EmployeeMain {
     }
     
     public void displayDeveloper(Developer e){
+       Department d=e.getDepartment();
+ 	   System.out.println(e.getId()+" "+e.getName()+" "+d.getDeptId()+" "+d.getDeptName());
  	   System.out.println("Language Used by User : "+ e.getLanguage());
  	   
     }
     public void displayTester(Tester e){
+       Department d=e.getDepartment();
+ 	   System.out.println(e.getId()+" "+e.getName()+" "+d.getDeptId()+" "+d.getDeptName());
  	   System.out.println("Tools Used by User : "+ e.getTools());
  	   
     }
